@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>etch-a-sketch</h1>
+    </header>
+    <main>
+        <section class="board">
+            <!-- code wil be injected dynamically via java script -->
+        </section>
+        <section class="btns" id='btns'>
+            <div class="icon"></div>
+            <button class="btn active-btn" data-id="color">default</button>
+            <button class="btn" data-id="rainbow">rainbow</button>
+            <input type="color" id="costume" value="#3ea6ff"></input>
+            <button class="btn" data-id="costume">select</button>
+            <button class="btn" data-id="erase">erase</button>
+            <button class="btn" id="clear">clear</button>
+            <div class="slidecontainer">
+                <p class="slider-info">16 by 16</p>
+                <input type="range" min="16" max="64" value="16" class="slider" id="myRange">
+            </div>
+        </section>
+    </main>
+    <footer>al rights served <a href="https://www.linkedin.com/in/mohammad-adel-46548a168/" target="_blank">mohammad adel</a> &#169; 2022</footer>
+    <script src="app.js"></script>
+</body>
+</html>
